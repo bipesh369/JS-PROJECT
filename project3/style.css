@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #3e88f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  background: #dfcaca;
+  padding: 30px 40px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#banner {
+  margin-bottom: 15px;
+}
+
+#banner span {
+  font-size:100px;
+  font-weight: 600;
+  color: #3e88f8;
+}
+
+#clock {
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 15px;
+  color: #c90808;
+}

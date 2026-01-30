@@ -1,0 +1,147 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f7fa;
+}
+
+/* Wrapper */
+#wrapper {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  padding: 32px 36px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* Headings and text */
+#wrapper h1 {
+  font-size: 1.9rem;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+#wrapper p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 6px;
+}
+
+/* Form */
+.form {
+  margin-top: 22px;
+}
+
+#guess {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Input field */
+.guessField {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.guessField:focus {
+  box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.5);
+}
+
+/* Submit button */
+.guessSubmit {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #06202a;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.guessSubmit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.guessSubmit:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Results section */
+.resultParas {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.resultParas p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+/* Dynamic values */
+#guesses {
+  font-weight: 600;
+  color: #ffd369;
+}
+
+#lastResult {
+  font-weight: 700;
+  color: #4facfe;
+}
+
+/* Feedback message */
+.lowOrHigh {
+  margin-top: 12px;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+/* Optional feedback colors (set via JS) */
+.lowOrHigh.low {
+  color: #ffb703;
+}
+
+.lowOrHigh.high {
+  color: #ff6b6b;
+}
+
+.lowOrHigh.correct {
+  color: #38e54d;
+}
+
+/* Responsive tweak */
+@media (max-width: 480px) {
+  #wrapper {
+    padding: 26px 22px;
+  }
+
+  #wrapper h1 {
+    font-size: 1.6rem;
+  }
+}
